@@ -1,0 +1,326 @@
+/** 
+* Backend design
+*/
+header{
+    height: 40px;
+    background-color: #2ecc71;
+}
+header ul{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header ul li{
+    padding: 7px 20px;
+    align-self: center;
+    border-right: 1px solid white;
+    cursor: pointer;
+    transition: .4s;
+    color: white;
+}
+header ul li:first-child{
+    border-left: 1px solid white;
+}
+header ul li:hover{
+    background-color: #27ae60;
+}
+header .active{
+    background-color: #27ae60;
+}
+.categori-items{
+    justify-content: space-between;
+}
+
+
+/**
+*Frontend design
+*/
+
+.frontEnd{
+    display: flex;
+}
+/**
+* 
+* Filter area css
+*/
+.sidebar-section{
+    min-width: 300px;
+    position: relative;
+    height: 93vh;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid #ddd;
+}
+.sidebar-head{
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+}
+
+#search{
+    height: 20px;
+    border: 2px solid #ddd !important;
+    outline: none;
+    border-radius: 20px;
+    padding: 0px 5px;
+}
+label[for = search]{
+    margin-right: 10px;
+}
+.serach-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*
+*
+*   All product 
+*   product greed design
+*
+*/
+
+.product-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.product-scrool {
+    flex-grow: 1;
+}
+.product-head {
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.btn-cart {
+    background-color: #2ecc71;
+    padding: 2px 5px !important;
+}
+.p_button {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.input-group-text{
+    padding: 2px 8px !important;
+}
+.pointer *{
+    cursor: pointer;
+    user-select: none;
+    padding: 0px 2px;
+}
+
+/**
+*
+*Product root style start here
+*/
+
+.product_root {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    height: 100%;
+}
+
+.product-wrapper {
+    width: 23%;
+    transition: .4s;
+    text-align: center;
+    margin: 0px 1%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.product-wrapper img {
+    transition: .4s;
+    height: 200px;
+}
+.product-wrapper:hover img{
+    transform: scale(1.5);
+}
+.p_image-wrapper{
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 200px;
+}
+.p_button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.p_name {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* product design */
+.product-grid{
+    flex-direction: row;
+}
+.product-list{
+    flex-direction: column;
+}
+.product-list .product-wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+.product-list .p_name {
+    position: absolute;
+    left: 210px;
+    top: 0;
+}
+.product-list .p_image-wrapper {
+    min-height: 100px;
+    max-height: 100px;
+    width: 250px;
+}
+.product-list .p_image-wrapper img{
+    max-width: 100%;
+    height: auto;
+}
+.product-list .p_button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 6px;
+}
+.product-list .price {
+    text-align: left;
+    position: absolute;
+    bottom: 32px;
+    left: 208px;
+}
+form#p_form {
+    margin-top: 50px;
+}
+.have-sell{
+    text-decoration: line-through;
+}
+.price {
+    text-align: left;
+}
+.discount {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+    right: 13px;
+    top: 6px;
+    box-shadow: -9px 4px 10px rgba(0,0,0,0.3);
+    z-index: 99;
+}
+.empty-message {
+    height: 100%;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: url(https://cieu.in/wp-content/uploads/2021/01/Home-banner-image-1-1280x867.png);
+    background-size: cover;
+    background-position: center right;
+    color: white;
+    font-size: 50px;
+}
+.load-message {
+    height: 100%;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center right;
+    color: #2ecc71;
+    font-size: 50px;
+}
+
+/**
+*product bar css start here
+*/
+.product-bar {
+    width: 100%;
+    height: 40px;
+    background: #2ecc71;
+}
+.product-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+.view-bar div.active {
+    background: rgb(22, 138, 70);
+    border-radius: 5px;
+}
+.view-bar div {
+    color: white;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+.view-bar{
+    margin-right: 20px;
+}
+.view-bar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+/**
+*Page loader css start
+*/
+.pageLoader{
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BackendEnd,
+.frontEnd {
+    transition: .4s;
+}
+.BackendEnd.d-none,
+.frontEnd.d-none{
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.sidebar-head {
+    position: fixed;
+    width: 300px;
+    top: 40px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Store project</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="list-unstyled d-flex">
+        <li id="backendbtn">Backend</li>
+        <li id="frontendbtn" class="active">Frontend</li>
+      </ul>
+    </header>
+    <div class="root">
+      <div class="pageLoader d-none">
+        <img
+          src="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif"
+          alt=""
+        />
+      </div>
+      <div class="BackendEnd d-none">
+        <div class="getdata">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 my-3 m-auto">
+                <form id="p_form">
+                  <label for="proname">Product name</label>
+                  <input
+                    required
+                    id="p_name"
+                    name="p_title"
+                    placeholder="Type your product name"
+                    class="form-control"
+                    type="text"
+                  />
+                  <div class="input-group my-2">
+                    <label for="p_price" class="d-block w-100">Price</label>
+                    <span class="input-group-text">Price</span>
+                    <input
+                      required
+                      id="p_main_price"
+                      name="p_price"
+                      placeholder=""
+                      class="form-control me-2"
+                      type="number"
+                    />
+                    <span class="input-group-text">Sale</span>
+                    <input
+                      id="p_sell_price"
+                      name="p_sell_price"
+                      placeholder=""
+                      class="form-control"
+                      type="number"
+                    />
+                  </div>
+                  <div class="input-group my-2">
+                    <span class="input-group-text">URI</span>
+                    <input
+                      class="form-control"
+                      id="p_url"
+                      name="p_image"
+                      placeholder="input your product image url"
+                      type="url"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-primary w-100"
+                    value="Throw The Product"
+                    type="submit"
+                  >Throw The Product</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Front End  Start Here -->
+
+      <div class="frontEnd">
+        <section class="sidebar-section">
+          <div class="sidebar-head">
+            <h3 class="text-white text-center">Real time filter</h3>
+            <div class="all-filters">
+              <div class="serach-wrapper">
+                <label for="search">Search</label>
+                <input id="search" type="search" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-section">
+          <div class="product-head">
+            <h3 class="text-center">All Products</h3>
+          </div>
+          <div class="product-bar">
+            <div class="view-bar">
+              <div id="list" class="list-view"><i class="fas fa-list"></i></div>
+              <div id="grid" class="grid-view active">
+                <i class="fas fa-th"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-scrool">
+            <div class="product_root">
+                
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/function.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
